@@ -1,0 +1,13 @@
+{
+  "name": "Shape Match — Learn, Play, Grow",
+  "short_name": "Shape Match",
+  "description": "An accessible shape learning game for young learners.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fffaf1",
+  "theme_color": "#fffaf1",
+  "icons": [
+    { "src": "icons/shape-match.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fffaf1" />
+  <meta name="description" content="An accessible shape learning game for young learners." />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icons/shape-match.svg" type="image/svg+xml" />
+  <title>Shape Match — Learn, Play, Grow</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient ambient-blue"></div><div class="ambient ambient-yellow"></div>
+  <div class="ambient ambient-green"></div><div class="ambient ambient-purple"></div>
+  <div id="connection-status" class="connection-status" role="status" aria-live="polite"></div>
+  <main id="app" aria-live="polite"></main>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="app.js?v=teacher-dashboard-1"></script>
+  <script>if ('serviceWorker' in navigator) window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js', { updateViaCache: 'none' }).then(reg => reg.update()).catch(() => {}));</script>
+</body>
+</html>
